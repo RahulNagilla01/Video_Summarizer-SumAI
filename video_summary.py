@@ -55,3 +55,7 @@ def summarize_text(text, num_sentences=5):
     summary_sentences = [str(sentence) for sentence in summary]
     return ' '.join(summary_sentences)
 
+def summarize_video(summarize_text(text, num_sentences=5)):
+     summarized = sumy.Plaintextplaser()
+    
+
