@@ -1,0 +1,203 @@
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #1E1E2E, #2C2C3E); /* Dark metallic gradient background */
+    color: #E0E0E0; /* Light gray text for contrast */
+}
+
+/* Animated Gradient Background */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #00CED1, #6A5ACD, #FF007F); /* Neon teal-to-purple-to-pink gradient */
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite; /* Animated gradient */
+    color: white;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #00FF7F; /* Neon green for hover effect */
+}
+.cta-button {
+    background: linear-gradient(45deg, #00FF7F, #00CED1); /* Neon green-to-teal gradient */
+    color: black; /* Dark text for contrast */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.cta-button:hover {
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(45deg, #00CED1, #6A5ACD, #FF007F); /* Neon teal-to-purple-to-pink gradient */
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite; /* Animated gradient */
+    color: white;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Drag and Drop Area */
+.upload-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.drag-drop-area {
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    border: 2px dashed #00CED1; /* Neon teal dashed border */
+    border-radius: 10px;
+    background-color: #2C2C3E; /* Dark background for contrast */
+    color: #E0E0E0;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+.drag-drop-area p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.drag-drop-area:hover {
+    background-color: #3C3C4E; /* Darken background on hover */
+}
+
+.drag-drop-area input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+.file-upload-label {
+    color: #00CED1;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.url-input {
+    margin-top: 20px;
+}
+
+.url-input input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.url-input button {
+    padding: 10px 20px;
+    background-color: #00CED1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.url-input button:hover {
+    background-color: #00FF7F;
+}
+
+/* Video Player Section */
+.video-player {
+    margin-top: 40px;
+}
+
+#videoPreview {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #333; /* Darker background for video preview */
+}
+
+/* Sections */
+.section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: linear-gradient(45deg, #1E1E2E, #2C2C3E); /* Dark metallic gradient background */
+}
+.steps, .use-case-container, .review {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.step, .use-case, .review {
+    background: #2C2C3E; /* Dark card background */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: transform 0.3s ease;
+    color: #E0E0E0; /* Light gray text */
+}
+.step:hover, .use-case:hover, .review:hover {
+    transform: translateY(-5px); /* Hover effect for cards */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(45deg, #00CED1, #6A5ACD, #FF007F); /* Neon teal-to-purple-to-pink gradient */
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite; /* Animated gradient */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Summary Section */
+.summary-section {
+    background: #2C2C3E;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    color: #E0E0E0;
+}
+
+.summary-section h2 {
+    margin-bottom: 1rem;
+}
+
+.summary-content {
+    text-align: left;
+    line-height: 1.6;
+}
+
