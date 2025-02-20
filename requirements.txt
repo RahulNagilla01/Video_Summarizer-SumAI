@@ -1,0 +1,6 @@
+requirements:
+-moviepy
+-speech_recognition
+-pydub
+-sumy
+-nltk
