@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SumAI - Video Summarizer</title>
+    <!-- Include the stylesheet using Flask's url_for -->
+    <link rel="stylesheet"  href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Include Font Awesome (update with your actual kit code or use a CDN link) -->
+    <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">SumAI</div>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#use-cases">Use Cases</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Summarize Videos Instantly with AI</h1>
+            <p>Transform long videos into concise summaries with AI-powered technology.</p>
+
+            <!-- Upload Section -->
+            <form method="post" enctype="multipart/form-data" id="uploadForm">
+                <!-- Include CSRF token if you have CSRF protection enabled -->
+                
+                <section class="upload-section">
+                    <div class="drag-drop-area" id="dragDropArea">
+                        <p>Drag & Drop Video Here</p>
+                        <p>or</p>
+                        <input type="file" id="fileInput" name="video" accept="video/*" style="display: none;">
+                    </div>
+                    <div class="url-input">
+                        <input type="text" id="videoUrl" name="videoUrl" placeholder="Paste Video URL (e.g., YouTube)">
+                        <button type="submit" id="summarizeBtn">Summarize</button>
+                    </div>
+                </section>
+            </form>
+
+            <!-- Summary Display Section -->
+             <section class="summary-section" id="summarySection" style="display: none;">
+              <h2>Summary</h2>
+             <div class="summary-content" id="summaryContent"></div>
+             </section>
+
+
+            <!-- Video Player Section -->
+            <section class="video-player" id="videoPlayer">
+                <h2>Video Preview</h2>
+                <video id="videoPreview" controls>
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <!-- Summary Display Section -->
+            <section class="summary-section" id="summarySection">
+                <h2>Summary</h2>
+                <div class="summary-content" id="summaryContent"></div>
+            </section>
+
+            <!-- How It Works Section -->
+            <section id="how-it-works" class="info-section">
+                <h2>How It Works</h2>
+                <p>Our AI-powered tool extracts key points from videos and summarizes them into digestible content.</p>
+            </section>
+
+            <!-- Use Cases Section -->
+            <section id="use-cases" class="info-section">
+                <h2>Use Cases</h2>
+                <p>Whether you're a student, content creator, or researcher, SumAI helps you save time and extract valuable information quickly.</p>
+            </section>
+
+            <!-- Reviews Section -->
+            <section id="reviews" class="info-section">
+                <h2>Reviews</h2>
+                <p>Our users love how fast and accurate our video summarizer is. Here’s what they have to say:</p>
+                <div class="reviews">
+                    <blockquote>"SumAI saved me hours of watching and summarized the most important parts perfectly!"</blockquote>
+                    <p>- John Doe, YouTuber</p>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="info-section">
+                <h2>FAQ</h2>
+                <p>Got questions? Here are some of the most frequently asked ones:</p>
+            </section>
+
+            <footer>
+                <p>&copy; 2025 SumAI. All rights reserved.</p>
+            </footer>
+        </div>
+    </header>
+
+    <!-- Include the script using Flask's url_for -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
